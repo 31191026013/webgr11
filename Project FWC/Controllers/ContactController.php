@@ -20,7 +20,7 @@ class ContactController extends BaseController{
 
     public function guiMail($name,$email,$subject,$message){
         //điền email nhận tại đây
-        $to = "markkevin396@gmail.com";
+        $to = "abc@gmail.com";
         $subjectTitle = "Liên hệ từ $name";           
         $noidungthu = "
         <strong>Họ tên: </strong> $name<br/>
@@ -30,10 +30,10 @@ class ContactController extends BaseController{
         <i>Thư được gửi từ liên hệ của FWC COSMETIC</i>";
         
         //dùng mail test
-        $from = "hhphuc12b2@gmail.com";
+        $from = "abc@gmail.com";
         
         //pass email yahoo
-        $p="ijgyvjshvomertaq";
+        $p="abc";
         $this->contactModel -> GuiMailTo($to, $from, $from_name="FWC COSMETIC", $subjectTitle, $noidungthu, $from, $p, $error);
         
               
